@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(242, 245, 238);
+}
+
+
+p {
+    /*Colocando todos os paragráfos justificados*/
+    text-align: justify;
+    /*Criando uma identação*/
+    text-indent: 50px;
+}
