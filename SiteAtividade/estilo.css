@@ -9,3 +9,39 @@ p {
     /*Criando uma identação*/
     text-indent: 50px;
 }
+
+/* Formatação de foto com legenda */
+figure.foto-legenda {
+    /*Aqui colocamos borda, largura da borda, tipo de borda e cor da borda */
+    position: relative;
+    border: 8px solid rgb(250, 248, 248);
+    box-shadow: 1px 1px 4px rgb(44, 43, 43) ; /*Usado para colocar sombra com parâmentros: deslocamento horizontal, 
+    deslocamento vertical, espalhamento e cor */
+}
+
+figure.foto-legenda img {
+    width: 100%; /* Definição de largura*/
+    height: 100%; /*Definição de altura*/
+}
+
+figure.foto-legenda figcaption {
+  opacity: 0;  
+  position: absolute;  
+  top: 0px;
+  background-color: rgba(0,0,0,.4);
+  color:white;
+  /*Colocar a borda ocupando todo o espaço*/
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  /*Aqui criamos um box dentro do border*/
+  box-sizing: border-box;
+  /*Criando um efeito de transição*/
+  transition: opacity 1s;
+
+}
+
+/*Cria o efeito de aparecer a legenda após o mouse passar por cima*/
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
