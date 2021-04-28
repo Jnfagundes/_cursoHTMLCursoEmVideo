@@ -1,5 +1,21 @@
+/*Aqui estamos colocando uma fonte externa*/
+@import url(http://fonts.googleleapis.com/css?family=Titillium+web);
+@font-face { 
+    font-family:'fontelogo' ;
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
 body {
-    background-color: rgb(242, 245, 238);
+    background-color: #dddddd;
+}
+
+div#interface {
+    width: 900px; /*Largura da div*/
+    background-color: #ffffff;
+    margin: -20px auto 0px auto; /*Nas configurações de margem o itens seguem essa ordem cima
+     direita, embaixo, esquerda*/
+    box-shadow: 0px 0px 10px black ; /*Cria uma sombra em volta do objeto*/
+    padding: 10px 10px 10px 10px; /*seguem as mesmas configurações da margin */
 }
 
 
@@ -8,6 +24,38 @@ p {
     text-align: justify;
     /*Criando uma identação*/
     text-indent: 50px;
+}
+
+/*Configuração da imagem do cabeçalho*/
+header#cabecalho img#icone {
+    position: absolute;
+    left: 950px;
+    top: 70px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid; /*Cofigura uma borda em baixo do container com os 
+    parâmetros largura, cor e formato, nesse caso solido*/
+    height: 150px; /*Definição de altura do cabeçalho*/
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /*Aqui especificamos um fundo com imagem
+     e usamos um atributo para que ela não se repita*/
+}
+
+header#cabecalho h1 {
+    font-family: 'fontelogo', sans-serif; /*Aqui está sendo mudado o estilo de fonte*/
+    font-family: 60pt; /*Aqui está sendo mudado o tamanho da fonte*/
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Titilium web, sans-serif';
+    color: #888888;
+    font-size: 20pt;
+    padding: 0px;
+    margin-top: 0px;
 }
 
 
