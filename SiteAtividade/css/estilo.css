@@ -10,6 +10,7 @@ p {
     text-indent: 50px;
 }
 
+
 /* Formatação de foto com legenda */
 figure.foto-legenda {
     /*Aqui colocamos borda, largura da borda, tipo de borda e cor da borda */
@@ -44,4 +45,32 @@ figure.foto-legenda figcaption {
 /*Cria o efeito de aparecer a legenda após o mouse passar por cima*/
 figure.foto-legenda:hover figcaption {
     opacity: 1;
+}
+
+
+/*Configuração da posição do menu*/
+nav#menu {
+    display: block; /*Transforma todo o menu em um mesmo bloco(um bloco pode flutuar pela tela)*/
+}
+
+/*Configuração do menu*/
+nav#menu ul {
+    list-style: none; /*Remove a marcação da lista*/
+    text-transform: uppercase; /*Transforma as letras do menu em maiusculas*/
+    position: absolute; /*Dessa forma consigo colocar o bloco em qualquer lugar da página*/
+    top: -20px; /*Coloca o objeto no topo*/
+    left: 500px; /*Coloca o objeto a direita da tela*/
+}
+
+/*Faz o texto que está dentro da tag h1 ficar invisível*/
+nav#menu h1 {
+    display: none;
+}
+
+/*Configuração de cada lista do menu*/
+nav#menu li {
+    display: inline-block; /*Exibe o bloco em uma mesma linha*/
+    background-color: #dddddd; /*Coloca cor no fundo de cada opção do menu*/
+    padding: 10px; /*Cria um espaço interno*/
+    margin: 2px; /*Cria um espaço externo*/
 }
