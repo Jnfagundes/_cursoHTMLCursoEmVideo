@@ -73,4 +73,21 @@ nav#menu li {
     background-color: #dddddd; /*Coloca cor no fundo de cada opção do menu*/
     padding: 10px; /*Cria um espaço interno*/
     margin: 2px; /*Cria um espaço externo*/
+    transition: background-color 1s;
+}
+
+/*Ação execultadad quando o mouse possar por cima de cada botão do menu*/
+nav#menu li:hover {
+    background-color: #140707;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none; /*Com isso, retirei todo o sublinhado do texto*/
+}
+
+/*Ações que acontecerão toda vez que o mouse passar por cima do menu*/
+nav#menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
