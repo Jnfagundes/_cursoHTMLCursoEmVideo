@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo javaScript</title>
+    <script> /*Aqui está sendo criado o meu conteúdo JavaScript*/
+        function acendeLampada() { /*Aqui está sendo criada uma função*/
+            /*Esse comando referencia o objeto luz e troca o seu src pelo novo objeto*/
+            document.getElementById("luz").src="_imagens/lampada-acesa.jpg"; 
+        }
+        function apagaLampada() { /*Essa função faz o oposto da função acima*/
+            document.getElementById("luz").src="_imagens/lampada-apagada.jpg";
+        }
+        function quebraLampada() { /*Essa função irá quebrar a lâmpada*/
+            document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+        }
+    </script>
+</head>
+<body>
+    <h1>Acenda a Lâmpada</h1>
+    <!--Aqui está sendo colocado o parâmetro onmousemove e o onmouseout que chamará a função javaScript-->
+    <img src="_imagens/lampada-apagada.jpg" id="luz"  onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()" />
+    
+</body>
+</html>
