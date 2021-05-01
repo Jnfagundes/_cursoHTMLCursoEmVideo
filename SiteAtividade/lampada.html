@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo javaScript</title>
+    <!--Essa aplicação está sendo coloda diretamente de um código HTML-->
     <script> /*Aqui está sendo criado o meu conteúdo JavaScript*/
+        /*Essa função tem como objetivo substituir a imagem de uma lâmpada apagada, por uma acesa*/
         function acendeLampada() { /*Aqui está sendo criada uma função*/
             /*Esse comando referencia o objeto luz e troca o seu src pelo novo objeto*/
             document.getElementById("luz").src="_imagens/lampada-acesa.jpg"; 
@@ -20,7 +22,8 @@
 </head>
 <body>
     <h1>Acenda a Lâmpada</h1>
-    <!--Aqui está sendo colocado o parâmetro onmousemove e o onmouseout que chamará a função javaScript-->
+    <!--Aqui está sendo colocado o parâmetro onmousemove, onclick e o onmouseout, que chamará a função javaScript-->
+    <!--A página já começa com a imagem da lâmpada apagada-->
     <img src="_imagens/lampada-apagada.jpg" id="luz"  onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()" />
     
 </body>
